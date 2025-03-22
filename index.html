@@ -3,20 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moja stránka</title>
+    <title>Naše Služby</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            margin: 50px;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         h1 {
-            color: #0077cc;
+            color: #333;
+        }
+        .services {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+        .service {
+            text-align: center;
+            padding: 15px;
+        }
+        .service i {
+            font-size: 50px;
+            color: #007BFF;
         }
     </style>
 </head>
 <body>
-    <h1>Vitaj na mojej stránke!</h1>
-    <p>Toto je jednoduchá stránka hostovaná na <strong>GitHub Pages</strong>.</p>
+    <div class="container">
+        <h1>Naše Služby</h1>
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-cogs"></i>
+                <h3>CNC Frézovanie</h3>
+                <p>Precízne obrábanie materiálov s vysokou presnosťou.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-burn"></i>
+                <h3>Laserové Vypaľovanie</h3>
+                <p>Vysokokvalitné gravírovanie a rezanie laserom.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-cube"></i>
+                <h3>3D Tlač</h3>
+                <p>Moderná výroba prototypov a funkčných dielov.</p>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
